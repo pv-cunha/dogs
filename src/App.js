@@ -9,18 +9,18 @@ import UserState from './Context/UserState';
 
 const App = () => {
   return (
-    <UserState>
-      <div>
-        <BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <UserState>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login/*" element={<Login />} />
           </Routes>
           <Footer />
-        </BrowserRouter>
-      </div>
-    </UserState>
+        </UserState>
+      </BrowserRouter>
+    </div>
   );
 };
 
