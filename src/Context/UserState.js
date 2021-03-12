@@ -43,7 +43,7 @@ const UserState = ({ children }) => {
       const { url, options } = TOKEN_POST({ username, password });
 
       const tokenRes = await fetch(url, options);
-      console.log(tokenRes);
+
       if (!tokenRes.ok) throw new Error(`Usuário ou senha inválida !`);
 
       const { token } = await tokenRes.json();
