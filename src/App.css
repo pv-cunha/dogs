@@ -66,6 +66,7 @@ a {
 
   margin: 1rem 0;
   position: relative;
+  z-index: 1;
 }
 
 .title::after {
