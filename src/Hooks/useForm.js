@@ -10,6 +10,10 @@ const validation = {
     message:
       'A senha deve conter pelo menos 8 caracteres. Sendo uma letra maiúscula, uma letra minúscula e ao menos um caractere especial (@$!%*?&).',
   },
+  number: {
+    regex: /^\d+$/,
+    message: 'Utilize apenas números !',
+  },
 };
 
 const useForm = (type) => {
