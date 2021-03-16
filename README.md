@@ -18,4 +18,4 @@ _Paulo Victor Vieira Cunha_
 
 ### `npm install`
 
-### `npm run dev`
+### `npm start`
