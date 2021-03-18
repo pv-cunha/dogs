@@ -5,7 +5,7 @@ import { COMMENT_POST } from '../../api';
 import { ReactComponent as Enviar } from '../../Assets/enviar.svg';
 import useFetch from '../../Hooks/useFetch';
 
-const PhotoCommentsForm = ({ id, setShowComments }) => {
+const PhotoCommentsForm = ({ id, setShowComments, singlePage }) => {
   const [comment, setComment] = React.useState('');
 
   const { request, error } = useFetch();
@@ -25,7 +25,10 @@ const PhotoCommentsForm = ({ id, setShowComments }) => {
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form
+      className={`${styles.form} ${singlePage ? styles.singlePage : ''}`}
+      onSubmit={handleSubmit}
+    >
       <textarea
         name="comment"
         id="comment"
