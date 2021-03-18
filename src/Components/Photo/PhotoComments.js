@@ -3,7 +3,7 @@ import styles from '../../Styles/Photo/PhotoComments.module.css';
 import UserContext from '../../Context/UserContext';
 import PhotoCommentsForm from './PhotoCommentsForm';
 
-const PhotoComments = ({ id, comments }) => {
+const PhotoComments = ({ id, comments, singlePage }) => {
   const userContext = React.useContext(UserContext);
   const { isAuthenticated } = userContext;
 
@@ -17,7 +17,10 @@ const PhotoComments = ({ id, comments }) => {
 
   return (
     <>
-      <ul ref={commentsSection} className={styles.comments}>
+      <ul
+        ref={commentsSection}
+        className={`${styles.comments} ${singlePage ? styles.singlePage : ''}`}
+      >
         {showComments.map((comment) => (
           <li key={comment.comment_ID}>
             <b>{comment.comment_author}: </b>
@@ -26,7 +29,11 @@ const PhotoComments = ({ id, comments }) => {
         ))}
       </ul>
       {isAuthenticated && (
-        <PhotoCommentsForm id={id} setShowComments={setShowComments} />
+        <PhotoCommentsForm
+          id={id}
+          setShowComments={setShowComments}
+          singlePage
+        />
       )}
     </>
   );

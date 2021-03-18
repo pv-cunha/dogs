@@ -6,6 +6,10 @@
   margin: 1rem;
 }
 
+.form.singlePage {
+  margin: 1rem 0;
+}
+
 .textarea {
   display: block;
 
@@ -24,7 +28,8 @@
   resize: none;
 }
 
-.textarea:hover, .textarea:focus {
+.textarea:hover,
+.textarea:focus {
   outline: none;
   border-color: #fb1;
   background: #fff;
@@ -46,7 +51,8 @@
   cursor: pointer;
 }
 
-.button:focus, .button:hover {
+.button:focus,
+.button:hover {
   outline: none;
 }
 
@@ -58,7 +64,7 @@
 
 .button:focus svg g,
 .button:hover svg g {
-animation: latir 0.6s infinite;
+  animation: latir 0.6s infinite;
 }
 
 @keyframes latir {

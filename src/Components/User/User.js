@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router';
 import UserContext from '../../Context/UserContext';
 import Feed from '../Feed/Feed';
+import NotFound from '../Helper/NotFound';
 import UserHeader from './UserHeader';
 import UserPhotoPost from './UserPhotoPost';
 import UserStats from './UserStats';
@@ -18,6 +19,7 @@ const User = () => {
         <Route path="/" element={<Feed user={user.id} />} />
         <Route path="/postar" element={<UserPhotoPost />} />
         <Route path="/estatisticas" element={<UserStats />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </section>
   );
