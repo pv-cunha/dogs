@@ -6,10 +6,6 @@
   padding: 0 2rem;
 }
 
-.singlePage.comments {
-  padding: 0;
-}
-
 .comments li {
   margin-bottom: 0.5rem;
   line-height: 1.2;
