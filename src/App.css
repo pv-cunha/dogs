@@ -34,6 +34,7 @@ li {
 img {
   display: block;
   max-width: 100%;
+  padding: 0.5rem;
 }
 
 input,
@@ -110,4 +111,8 @@ a {
     opacity: 1;
     transform: initial;
   }
+}
+
+.VictoryContainer {
+  height: initial !important;
 }

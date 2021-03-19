@@ -10,12 +10,14 @@
   grid-area: 1 / 1;
 
   opacity: 0;
-  
+
   transition: 0.2s;
+
+  border-radius: 1rem;
 }
 
 .skeleton {
-  grid-area: 1 / 1 ;
+  grid-area: 1 / 1;
 
   height: 100%;
 
