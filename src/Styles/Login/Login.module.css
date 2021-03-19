@@ -10,11 +10,18 @@
   display: block;
   background: url('../../Assets/login.jpg') no-repeat center center;
   background-size: cover;
+
+  margin: 0.5rem;
+
+  border-radius: 0.5rem;
 }
 
 .forms {
   max-width: 30rem;
+
   padding: 1rem;
+
+  margin-top: 5vh;
 }
 
 @media (max-width: 40rem) {

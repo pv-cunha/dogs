@@ -5,7 +5,14 @@
 
   margin-bottom: 2rem;
 }
-.photoPost form input[type="file"] {
+
+@media (max-width: 40rem) {
+  .photoPost {
+    grid-template-columns: 1fr;
+  }
+}
+
+.photoPost form input[type='file'] {
   margin-bottom: 1rem;
 }
 
